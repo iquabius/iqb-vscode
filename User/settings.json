@@ -1,0 +1,12 @@
+{
+  // https://github.com/este/este/wiki/Recommended-VSCode-Settings
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.openEditors.visible": 0,
+  "editor.minimap.enabled": false,
+  // "workbench.activityBar.visible": false,
+  "workbench.statusBar.feedback.visible": false,
+  "window.menuBarVisibility": "toggle",
+  "window.restoreFullscreen": true,
+  "window.titleBarStyle": "native",
+}
