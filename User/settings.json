@@ -22,4 +22,6 @@
   "typescript.experimental.useSeparateSyntaxServer": true,
   "workbench.colorTheme": "Shades of Purple",
   "workbench.iconTheme": "simple-icons",
+  "aws.samcli.location": "/home/iquabius/.local/bin/sam",
+  "aws.profile": "vscode-aws-toolkit",
 }
