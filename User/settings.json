@@ -20,4 +20,5 @@
   "liveshare.featureSet": "insiders",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.experimental.useSeparateSyntaxServer": true,
+  "workbench.colorTheme": "Shades of Purple",
 }
