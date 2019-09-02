@@ -17,4 +17,5 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "liveshare.featureSet": "insiders",
 }
