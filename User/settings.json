@@ -18,4 +18,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "liveshare.featureSet": "insiders",
+  "javascript.updateImportsOnFileMove.enabled": "always",
 }
