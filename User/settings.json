@@ -19,4 +19,5 @@
   },
   "liveshare.featureSet": "insiders",
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.experimental.useSeparateSyntaxServer": true,
 }
