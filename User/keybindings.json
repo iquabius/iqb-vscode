@@ -431,6 +431,11 @@
         // "when": "editorTextFocus && !editorReadonly && editorLangId == markdown && !isMac"
         // https://github.com/yzhang-gh/vscode-markdown/blob/3ec7e0/package.json#L125
     },
+    {
+        // Same as magit-status on Emacs: "M-g s".
+        "key": "alt+g s",
+        "command": "workbench.scm.focus"
+    },
     // Isso caga o recortar com Ctrl+x
     // Posso tentar:
     // - https://marketplace.visualstudio.com/items?itemName=tuttieee.emacs-mcx
