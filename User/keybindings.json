@@ -533,6 +533,18 @@
         "key": "alt+f f",
         "command": "workbench.files.action.focusFilesExplorer"
     },
+    //* Emac's command describe-key usues `C-h k`
+    {
+        "key": "ctrl+h k",
+        "command": "keybindings.editor.recordSearchKeys",
+        "when": "inKeybindings && inKeybindingsSearch"
+    },
+    {
+        "key": "alt+k",
+        "command": "-keybindings.editor.recordSearchKeys",
+        "when": "inKeybindings && inKeybindingsSearch"
+    },
+    //*/
     // Isso caga o recortar com Ctrl+x
     // Posso tentar:
     // - https://marketplace.visualstudio.com/items?itemName=tuttieee.emacs-mcx
