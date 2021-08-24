@@ -433,8 +433,105 @@
     },
     {
         // Same as magit-status on Emacs: "M-g s".
-        "key": "alt+g s",
+        "key": "alt+g g",
         "command": "workbench.scm.focus"
+    },
+    {
+        "key": "alt+g n",
+        "command": "workbench.action.editor.nextChange",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+f5",
+        "command": "-workbench.action.editor.nextChange",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+g n",
+        "command": "workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "alt+f5",
+        "command": "-workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "alt+g p",
+        "command": "workbench.action.editor.previousChange",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+f5",
+        "command": "-workbench.action.editor.previousChange",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+g p",
+        "command": "workbench.action.compareEditor.previousChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "shift+alt+f5",
+        "command": "-workbench.action.compareEditor.previousChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "when": "workbench.scm.active || editorTextFocus || isInDiffEditor",
+        "key": "alt+g s",
+        "command": "git.stage"
+    },
+    {
+        // Why is it not working when workbench.scm.active?
+        // "when": "workbench.scm.active || editorTextFocus || isInDiffEditor",
+        "when": "(workbench.scm.active || editorTextFocus) && !isInDiffEditor",
+        // "when": "workbench.scm.active && !editorTextFocus && !isInDiffEditor",
+        "key": "alt+g u",
+        "command": "git.unstage"
+    },
+    {
+        "key": "alt+g s",
+        "command": "git.stageSelectedRanges",
+        "when": "isInDiffEditor"
+    },
+    {
+        "key": "ctrl+k ctrl+alt+s",
+        "command": "-git.stageSelectedRanges",
+        "when": "isInDiffEditor"
+    },
+    {
+        "when": "workbench.scm.active",
+        "key": "alt+g k",
+        "command": "git.clean"
+    },
+    {
+        "key": "alt+g k",
+        "command": "git.revertSelectedRanges",
+        "when": "isInDiffEditor || editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+r",
+        "command": "-git.revertSelectedRanges",
+        "when": "isInDiffEditor"
+    },
+    {
+        "key": "alt+g u",
+        "command": "git.unstageSelectedRanges",
+        "when": "isInDiffEditor"
+    },
+    {
+        "key": "ctrl+k ctrl+n",
+        "command": "-git.unstageSelectedRanges",
+        "when": "isInDiffEditor"
+    },
+    {
+        "when": "isInDiffEditor",
+        "key": "ctrl+enter",
+        "command": "git.openFile"
+    },
+    {
+        "key": "alt+f f",
+        "command": "workbench.files.action.focusFilesExplorer"
     },
     // Isso caga o recortar com Ctrl+x
     // Posso tentar:
