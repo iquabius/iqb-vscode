@@ -1,22 +1,6 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
-        "key": "ctrl+o",
-        "command": "workbench.action.nextEditor"
-    },
-    {
-        "key": "ctrl+pagedown",
-        "command": "-workbench.action.nextEditor"
-    },
-    {
-        "key": "ctrl+u",
-        "command": "workbench.action.previousEditor"
-    },
-    {
-        "key": "ctrl+pageup",
-        "command": "-workbench.action.previousEditor"
-    },
-    {
         "key": "alt+l",
         "command": "cursorRight",
         "when": "textInputFocus"
@@ -262,22 +246,36 @@
         "when": "listFocus && !inputFocus"
     },
     //*/
+    //* EDITOR/TAB NAVIGATION ##################################################
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "workbench.action.previousEditor"
+    },
     {
         "key": "ctrl+alt+u",
         "command": "workbench.action.moveEditorLeftInGroup"
-    },
-    {
-        "key": "ctrl+shift+pageup",
-        "command": "-workbench.action.moveEditorLeftInGroup"
     },
     {
         "key": "ctrl+alt+o",
         "command": "workbench.action.moveEditorRightInGroup"
     },
     {
-        "key": "ctrl+shift+pagedown",
-        "command": "-workbench.action.moveEditorRightInGroup"
+        "key": "alt+s",
+        "command": "workbench.action.navigateEditorGroups"
     },
+    {
+        "key": "alt+4",
+        "command": "workbench.action.splitEditor"
+    },
+    {
+        "key": "shift+alt+4",
+        "command": "workbench.action.splitEditorOrthogonal"
+    },
+    //*/
     {
         "key": "ctrl+shift+alt+i",
         "command": "editor.action.copyLinesUpAction",
@@ -389,10 +387,6 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+s",
-        "command": "workbench.action.navigateEditorGroups"
-    },
-    {
         "key": "alt+u",
         "command": "cursorWordLeft",
         "when": "textInputFocus"
@@ -404,27 +398,15 @@
     },
     {
         "key": "ctrl+\\",
+        "command": "-workbench.action.splitEditor"
+    },
+    {
+        "key": "ctrl+\\",
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {
         "key": "ctrl+b",
         "command": "-workbench.action.toggleSidebarVisibility"
-    },
-    {
-        "key": "alt+4",
-        "command": "workbench.action.splitEditor"
-    },
-    {
-        "key": "ctrl+\\",
-        "command": "-workbench.action.splitEditor"
-    },
-    {
-        "key": "shift+alt+4",
-        "command": "workbench.action.splitEditorOrthogonal"
-    },
-    {
-        "key": "ctrl+k ctrl+\\",
-        "command": "-workbench.action.splitEditorOrthogonal"
     },
     {
         "command": "sqltools.executeCurrentQuery",
