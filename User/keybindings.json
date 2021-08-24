@@ -221,16 +221,6 @@
         "when": "historyNavigationEnabled && historyNavigationWidget"
     },
     {
-        "key": "alt+k",
-        "command": "list.focusDown",
-        "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": "down",
-        "command": "-list.focusDown",
-        "when": "listFocus && !inputFocus"
-    },
-    {
         "key": "ctrl+alt+k",
         "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
@@ -250,6 +240,28 @@
         "command": "-editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
+    //* LIST NAVIGATION ########################################################
+    {   // There's no need to unset 'up' and 'down' keys. Leave them both.
+        "key": "alt+i",
+        "command": "list.focusUp",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "alt+k",
+        "command": "list.focusDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {   // There's no need to unset 'home' and 'end' keys. Leave them both.
+        "key": "shift+alt+,",
+        "command": "list.focusFirst",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "shift+alt+.",
+        "command": "list.focusLast",
+        "when": "listFocus && !inputFocus"
+    },
+    //*/
     {
         "key": "ctrl+alt+u",
         "command": "workbench.action.moveEditorLeftInGroup"
@@ -265,16 +277,6 @@
     {
         "key": "ctrl+shift+pagedown",
         "command": "-workbench.action.moveEditorRightInGroup"
-    },
-    {
-        "key": "alt+i",
-        "command": "list.focusUp",
-        "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": "up",
-        "command": "-list.focusUp",
-        "when": "listFocus && !inputFocus"
     },
     {
         "key": "ctrl+shift+alt+i",
