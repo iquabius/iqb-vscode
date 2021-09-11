@@ -415,8 +415,12 @@
         // "when": "editorTextFocus && !editorReadonly && editorLangId == markdown && !isMac"
         // https://github.com/yzhang-gh/vscode-markdown/blob/3ec7e0/package.json#L125
     },
+    //* VERSION CONTROL ########################################################
+    // Alternative 1: edamagit extension
+    // Alternative 2: https://vspacecode.github.io/
     {
-        // Same as magit-status on Emacs: "M-g s".
+        // Inspired by "C-x g" from magit-status and "C-c v g" from doom-emacs.
+        //? Use "M-v" prefix instead? It's closer to "Alt" and not far from "g".
         "key": "alt+g g",
         "command": "workbench.scm.focus"
     },
@@ -512,6 +516,11 @@
         "key": "ctrl+enter",
         "command": "git.openFile"
     },
+    {
+        "key": "alt+v l",
+        "command": "git-graph.view"
+    },
+    //*/
     {
         "key": "alt+f f",
         "command": "workbench.files.action.focusFilesExplorer"
