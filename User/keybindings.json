@@ -461,7 +461,9 @@
         "when": "textCompareEditorVisible"
     },
     {
-        "when": "workbench.scm.active || editorTextFocus || isInDiffEditor",
+        "when": "workbench.scm.active",
+        // In case we want to state the whole file from within the editor pane:
+        // "when": "!editorHasSelection && workbench.scm.active || editorTextFocus || isInDiffEditor",
         "key": "alt+g s",
         "command": "git.stage"
     },
@@ -476,7 +478,7 @@
     {
         "key": "alt+g s",
         "command": "git.stageSelectedRanges",
-        "when": "isInDiffEditor"
+        "when": "isInDiffEditor || editorTextFocus && editorHasSelection"
     },
     {
         "key": "ctrl+k ctrl+alt+s",
