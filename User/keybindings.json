@@ -468,10 +468,7 @@
         "command": "git.stage"
     },
     {
-        // Why is it not working when workbench.scm.active?
-        // "when": "workbench.scm.active || editorTextFocus || isInDiffEditor",
-        "when": "(workbench.scm.active || editorTextFocus) && !isInDiffEditor",
-        // "when": "workbench.scm.active && !editorTextFocus && !isInDiffEditor",
+        "when": "workbench.scm.active",
         "key": "alt+g u",
         "command": "git.unstage"
     },
@@ -503,7 +500,7 @@
     {
         "key": "alt+g u",
         "command": "git.unstageSelectedRanges",
-        "when": "isInDiffEditor"
+        "when": "isInDiffEditor || editorTextFocus && editorHasSelection"
     },
     {
         "key": "ctrl+k ctrl+n",
