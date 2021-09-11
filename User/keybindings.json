@@ -411,7 +411,7 @@
     {
         "command": "sqltools.executeCurrentQuery",
         "key": "ctrl+enter",
-        "when": "editorTextFocus && editorLangId == sql",
+        "when": "editorLangId == sql || editorLangId == markdown && editorTextFocus",
         // "when": "editorTextFocus && !editorReadonly && editorLangId == markdown && !isMac"
         // https://github.com/yzhang-gh/vscode-markdown/blob/3ec7e0/package.json#L125
     },
