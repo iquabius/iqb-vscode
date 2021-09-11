@@ -536,6 +536,17 @@
         "command": "-keybindings.editor.recordSearchKeys",
         "when": "inKeybindings && inKeybindingsSearch"
     },
+    // https://code.visualstudio.com/docs/editor/editingevolved
+    {
+        "key": "alt+k",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inFilesPicker || inQuickOpen"
+    },
+    {
+        "key": "alt+i",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inFilesPicker || inQuickOpen"
+    },
     {
         "key": "ctrl+h h",
         "command": "editor.action.showHover",
