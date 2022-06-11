@@ -3,6 +3,10 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*": "${basename}.*.${extname}"
+  },
   "editor.minimap.enabled": false,
   // "workbench.activityBar.visible": false,
   "workbench.statusBar.feedback.visible": false,
