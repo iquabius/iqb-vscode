@@ -245,6 +245,16 @@
         "command": "list.focusLast",
         "when": "listFocus && !inputFocus"
     },
+    {
+        "key": "shift+alt+i",
+        "command": "list.expandSelectionUp",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus"
+    },
+    {
+        "key": "shift+alt+k",
+        "command": "list.expandSelectionDown",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus"
+    },
     //*/
     //* EDITOR/TAB NAVIGATION ##################################################
     {
@@ -264,6 +274,13 @@
         "command": "workbench.action.moveEditorRightInGroup"
     },
     {
+        //? Could ctrl+tab be better for this?
+        // Elementary uses
+        //   - super+tab to switch workspaces.
+        //   - alt+tab to switch windows.
+        // ctrl+tab is already used for
+        // "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+        //? Why doesn't it work with CapsLock as tab?
         "key": "alt+s",
         "command": "workbench.action.navigateEditorGroups"
     },
@@ -555,6 +572,20 @@
     {
         "key": "ctrl+h d",
         "command": "editor.action.showDefinitionPreviewHover"
+    },
+    {
+        "key": "alt+c f",
+        "command": "sqltools.formatSql",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+c f",
+        "command": "sqltools.formatSql",
+        "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'code'"
+    },
+    {
+        "key": "shift+alt+[BracketLeft]",
+        "command": "extension.codeBlock"
     },
     //*/
     // Isso caga o recortar com Ctrl+x
